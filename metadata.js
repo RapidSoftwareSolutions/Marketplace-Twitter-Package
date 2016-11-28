@@ -21,8 +21,7 @@ module.exports.do = function(req, res){
                 {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter."},
                 {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter."},
                 {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter."},
-                {name:"tweetBody", type:"String", info:"The status you would like to tweet."},
-                {name:"to", type:"String", info:"The status that was tweeted."}
+                {name:"tweetBody", type:"String", info:"The status you would like to tweet."}
             ],
             "callbacks":[
                 {name:"success", info:"Success"},
@@ -37,8 +36,8 @@ module.exports.do = function(req, res){
                 {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter."},
                 {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter."},
                 {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter."},
-                {name:"query", type:"String", info:"The search will be using this query."},
-                {name:"to", type:"String", info:"The tweets that are found."}
+                {name:"query", type:"String", info:"The search will be using this query."}
+
             ],
             "callbacks":[
                 {name:"success", info:"Success"},
@@ -53,8 +52,7 @@ module.exports.do = function(req, res){
                 {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter."},
                 {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter."},
                 {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter."},
-                {name:"tweetId", type:"String", info:"The ID of the tweet to retweet."},
-                {name:"to", type:"String", info:"The tweet that was retweeted."}
+                {name:"tweetId", type:"String", info:"The ID of the tweet to retweet."}
             ],
             "callbacks":[
                 {name:"success", info:"Success"},
@@ -70,8 +68,7 @@ module.exports.do = function(req, res){
                 {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter."},
                 {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter."},
                 {name:"tweetId", type:"String", info:"The ID of the tweet to retweet."},
-                {name:"tweetAddition", type:"String", info:"The addition to the tweet."},
-                {name:"to", type:"String", info:"The tweet that was retweeted."}
+                {name:"tweetAddition", type:"String", info:"The addition to the tweet."}
             ],
             "callbacks":[
                 {name:"success", info:"Success"},
