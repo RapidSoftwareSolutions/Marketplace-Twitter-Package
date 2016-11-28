@@ -36,7 +36,7 @@ module.exports.tweet = function (req, res) {
             r.callback = 'error';
         }
         else{
-            r.contextWrites[to] = "Successfully tweeted: " + tweet;
+            r.contextWrites[to] = tweet;
             r.callback = 'success';
         }
         res.status(200).send(r);
