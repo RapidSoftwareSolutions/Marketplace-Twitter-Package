@@ -44,7 +44,7 @@ module.exports.retweetEdit = function (req, res) {
                     r.callback = 'error';
                 }
                 else{
-                    r.contextWrites[to] = "Successfully tweeted: " + editedTweet;
+                    r.contextWrites[to] = editedTweet;
                     r.callback = 'success';
                 }
                 res.status(200).send(r);
