@@ -7,6 +7,7 @@ module.exports.do = function(req, res){
         "description": "Twitter is an online news and social networking service where users post and read short 140-character messages called 'tweets'.",
         "image": "http://logo.clearbit.com/twitter.com",
         "repo": "https://github.com/RapidSoftwareSolutions/Marketplace-Twitter-Package",
+        "keywords": ["social", "updates", "network"],
         "accounts": {
             "domain": "twitter.com",
             "credentials": [
@@ -17,11 +18,11 @@ module.exports.do = function(req, res){
         'blocks'      : [{
             "name":"tweet",
             "args":[
-                {name:"consumerKey", type:"credentials", info:"The consumer key obtained from Tweeter."},
-                {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter."},
-                {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter."},
-                {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter."},
-                {name:"tweetBody", type:"String", info:"The status you would like to tweet."}
+                {name:"consumerKey", type:"credentials", info:"The consumer key obtained from Tweeter.", required: true},
+                {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter.", required: true},
+                {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter.", required: true},
+                {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter.", required: true},
+                {name:"tweetBody", type:"String", info:"The status you would like to tweet.", required: true}
             ],
             "callbacks":[
                 {name:"success", info:"Success"},
@@ -32,11 +33,11 @@ module.exports.do = function(req, res){
         {
             "name":"search",
             "args":[
-                {name:"consumerKey", type:"credentials", info:"The consumer key obtained from Tweeter."},
-                {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter."},
-                {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter."},
-                {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter."},
-                {name:"query", type:"String", info:"The search will be using this query."}
+                {name:"consumerKey", type:"credentials", info:"The consumer key obtained from Tweeter.", required: true},
+                {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter.", required: true},
+                {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter.", required: true},
+                {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter.", required: true},
+                {name:"query", type:"String", info:"The search will be using this query.", required: true}
 
             ],
             "callbacks":[
@@ -48,11 +49,11 @@ module.exports.do = function(req, res){
         {
             "name":"retweet",
             "args":[
-                {name:"consumerKey", type:"credentials", info:"The consumer key obtained from Tweeter."},
-                {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter."},
-                {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter."},
-                {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter."},
-                {name:"tweetId", type:"String", info:"The ID of the tweet to retweet."}
+                {name:"consumerKey", type:"credentials", info:"The consumer key obtained from Tweeter.", required: true},
+                {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter.", required: true},
+                {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter.", required: true},
+                {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter.", required: true},
+                {name:"tweetId", type:"String", info:"The ID of the tweet to retweet.", required: true}
             ],
             "callbacks":[
                 {name:"success", info:"Success"},
@@ -63,12 +64,12 @@ module.exports.do = function(req, res){
         {
             "name":"retweetEdit",
             "args":[
-                {name:"consumerKey", type:"credentials", info:"The consumer key obtained from Tweeter."},
-                {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter."},
-                {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter."},
-                {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter."},
-                {name:"tweetId", type:"String", info:"The ID of the tweet to retweet."},
-                {name:"tweetAddition", type:"String", info:"The addition to the tweet."}
+                {name:"consumerKey", type:"credentials", info:"The consumer key obtained from Tweeter.", required: true},
+                {name:"consumerSecret", type:"credentials", info:"The consumer secret obtained from Tweeter.", required: true},
+                {name:"accessTokenKey", type:"String", info:"The access token key obtained from Tweeter.", required: true},
+                {name:"accessTokenSecret", type:"String", info:"The access token secret obtained from Tweeter.", required: true},
+                {name:"tweetId", type:"String", info:"The ID of the tweet to retweet.", required: true},
+                {name:"tweetAddition", type:"String", info:"The addition to the tweet.", required: true}
             ],
             "callbacks":[
                 {name:"success", info:"Success"},
