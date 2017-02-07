@@ -1,3 +1,5 @@
+[![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/Twitter/functions?utm_source=RapidAPIGitHub_TwitterFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
+
 # Twitter Package
 Twitter is an online news and social networking service where users post and read short 140-character messages called 'tweets'.
 * Domain: twitter.com
